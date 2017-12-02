@@ -1,0 +1,120 @@
+n02110185 siberian husky
+n02112350 keeshond
+n02096051 airedale
+n02100236 german short haired pointer
+n02096437 dandie dinmont
+n02091134 whippet
+n02108000 entlebucher
+n02108915 french bulldog
+n02111277 newfoundland
+n02097658 silky terrier
+n02098413 lhasa
+n02091831 saluki
+n02090622 borzoi
+n02107142 doberman
+n02105855 shetland sheepdog
+n02091635 otterhound
+n02106382 bouvier des flandres
+n02091244 ibizan hound
+n02108422 bull mastiff
+n02105056 groenendael
+n02088364 beagle
+n02097298 scotch terrier
+n02115913 dhole
+n02113978 mexican hairless
+n02105162 malinois
+n02100583 vizsla
+n02087046 toy terrier
+n02113799 standard poodle
+n02085782 japanese spaniel
+n02107683 bernese mountain dog
+n02107908 appenzeller
+n02088238 basset
+n02090379 redbone
+n02096177 cairn
+n02099849 chesapeake bay retriever
+n02093647 bedlington terrier
+n02105251 briard
+n02085620 chihuahua
+n02102177 welsh springer spaniel
+n02112137 chow
+n02091467 norwegian elkhound
+n02099712 labrador retriever
+n02091032 italian greyhound
+n02100735 english setter
+n02105641 old english sheepdog
+n02094258 norwich terrier
+n02110627 affenpinscher
+n02115641 dingo
+n02101556 clumber
+n02109047 great dane
+n02092339 weimaraner
+n02106030 collie
+n02098105 soft coated wheaten terrier
+n02086646 blenheim spaniel
+n02097130 giant schnauzer
+n02096585 boston bull
+n02102040 english springer
+n02107574 greater swiss mountain dog
+n02092002 scottish deerhound
+n02106166 border collie
+n02098286 west highland white terrier
+n02113023 pembroke
+n02097047 miniature schnauzer
+n02099601 golden retriever
+n02111129 leonberg
+n02101006 gordon setter
+n02088094 afghan hound
+n02093859 kerry blue terrier
+n02110958 pug
+n02112706 brabancon griffon
+n02093991 irish terrier
+n02094433 yorkshire terrier
+n02111889 samoyed
+n02102480 sussex spaniel
+n02113186 cardigan
+n02104029 kuvasz
+n02112018 pomeranian
+n02093754 border terrier
+n02102318 cocker spaniel
+n02110063 malamute
+n02085936 maltese dog
+n02093428 american staffordshire terrier
+n02104365 schipperke
+n02099267 flat coated retriever
+n02108551 tibetan mastiff
+n02096294 australian terrier
+n02105412 kelpie
+n02113712 miniature poodle
+n02095570 lakeland terrier
+n02102973 irish water spaniel
+n02109961 eskimo dog
+n02088632 bluetick
+n02089973 english foxhound
+n02097474 tibetan terrier
+n02095314 wire haired fox terrier
+n02097209 standard schnauzer
+n02113624 toy poodle
+n02088466 bloodhound
+n02106662 german shepherd
+n02090721 irish wolfhound
+n02093256 staffordshire bullterrier
+n02101388 brittany spaniel
+n02105505 komondor
+n02106550 rottweiler
+n02087394 rhodesian ridgeback
+n02086079 pekinese
+n02100877 irish setter
+n02099429 curly coated retriever
+n02111500 great pyrenees
+n02086910 papillon
+n02089078 black and tan coonhound
+n02107312 miniature pinscher
+n02109525 saint bernard
+n02116738 african hunting dog
+n02095889 sealyham terrier
+n02086240 shih tzu
+n02110806 basenji
+n02089867 walker hound
+n02094114 norfolk terrier
+n02108089 boxer
