@@ -3,7 +3,7 @@
 Term: Fall 2017
 
 + Team #
-+ Projec title: Lorem ipsum dolor sit amet
++ Projec title: IOS Image Classification
 + Team members
 	+ Christina Huang - yh2859
 	+ Jing Zhao - jz2786
