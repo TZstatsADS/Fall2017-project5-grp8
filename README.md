@@ -1,9 +1,9 @@
-# ADS Project 5: 
+# ADS Project 5: Dog Breed Identifier APP
 
 Term: Fall 2017
 
 + Team #8
-+ Projec title: IOS Image Classification
++ Projec title: Dog Breed Identifier APP
 + Team members
 	+ Christina Huang - yh2859
 	+ Jing Zhao - jz2786
