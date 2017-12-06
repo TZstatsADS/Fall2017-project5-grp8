@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CameraExampleViewController.h"
+#import "Connector.h"
 
 @interface WebViewController : UIViewController <UIWebViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIWebView *Web4Dog;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong)Connector *connectorClass;
+
 
 @end

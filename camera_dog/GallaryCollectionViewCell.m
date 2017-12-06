@@ -7,7 +7,6 @@
 //
 
 #import "GallaryCollectionViewCell.h"
-#import "CameraExampleViewController.h"
 
 @implementation GallaryCollectionViewCell
 

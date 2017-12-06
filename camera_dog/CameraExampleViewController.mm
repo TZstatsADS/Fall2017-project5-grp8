@@ -21,6 +21,8 @@
 #include <sys/time.h>
 
 #include "tensorflow_utils.h"
+#import "WebViewController.h"
+
 
 // If you have your own model, modify this to the file name, and make sure
 // you've added the file to your app resources too.
@@ -34,7 +36,7 @@ const bool model_uses_memory_mapping = false;
 // If you have your own model, point this to the labels file.
 static NSString* labels_file_name = @"dog_retrained_labels";
 static NSString* labels_file_type = @"txt";
-
+static NSString* MYGlobalVariable;
 
 // These dimensions need to match those the model was trained with.
 const int wanted_input_width = 299;
@@ -170,33 +172,13 @@ static void *AVCaptureStillImageIsCapturingStillImageContext =
 }
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    square = [UIImage imageNamed:@"squarePNG"];
-    synth = [[AVSpeechSynthesizer alloc] init];
-    labelLayers = [[NSMutableArray alloc] init];
-    oldPredictionValues = [[NSMutableDictionary alloc] init];
-    
-    tensorflow::Status load_status;
-    if (model_uses_memory_mapping) {
-        load_status = LoadMemoryMappedModel(
-                                            model_file_name, model_file_type, &tf_session, &tf_memmapped_env);
-    } else {
-        load_status = LoadModel(model_file_name, model_file_type, &tf_session);
-    }
-    if (!load_status.ok()) {
-        LOG(FATAL) << "Couldn't load model: " << load_status;
-    }
-    
-    tensorflow::Status labels_status =
-    LoadLabels(labels_file_name, labels_file_type, &labels);
-    if (!labels_status.ok()) {
-        LOG(FATAL) << "Couldn't load labels: " << labels_status;
-    }
-    [self setupAVCapture];
-}
+
+
+
+
 
 - (IBAction)takePicture:(id)sender {
+    
   if ([session isRunning]) {
     [session stopRunning];
     [sender setTitle:@"Continue" forState:UIControlStateNormal];
@@ -258,7 +240,6 @@ static void *AVCaptureStillImageIsCapturingStillImageContext =
     size.width = frameSize.width;
     size.height = frameSize.height;
   }
-
   CGRect videoBox;
   videoBox.size = size;
   if (size.width < frameSize.width)
@@ -402,7 +383,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
   [super didReceiveMemoryWarning];
 }
 
-/*
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   square = [UIImage imageNamed:@"squarePNG"];
@@ -428,7 +409,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
   }
   [self setupAVCapture];
 }
-*/
+
 
 - (void)viewDidUnload {
   [super viewDidUnload];
@@ -500,7 +481,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     NSNumber *oldPredictionValueObject =
         [oldPredictionValues objectForKey:label];
     const float oldPredictionValue = [oldPredictionValueObject floatValue];
-    if (oldPredictionValue > 0.25f) {
+    if (oldPredictionValue > 0.05f) {
       NSDictionary *entry = @{
         @"label" : label,
         @"value" : oldPredictionValueObject
@@ -514,7 +495,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
       sortedArrayUsingDescriptors:[NSArray arrayWithObject:sort]];
 
   const float leftMargin = 10.0f;
-  const float topMargin = 10.0f;
+  const float topMargin = 50.0f;
 
   const float valueWidth = 48.0f;
   const float valueHeight = 26.0f;
@@ -557,18 +538,28 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
                          height:labelHeight
                       alignment:kCAAlignmentLeft];
 
-    if ((labelCount == 0) && (value > 0.5f)) {
+    if ((labelCount == 0) && (value > 0.4f)) {
       [self speak:[label capitalizedString]];
     }
 
     labelCount += 1;
-    if (labelCount <= 1 ){
-        NSString *MYGlobalVariable = label;
+    if (labelCount < 2 ) {
+        MYGlobalVariable = label;
     }
     if (labelCount > 4) {
       break;
     }
   }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"passSegue"]){
+        WebViewController *destinationVC = segue.destinationViewController;
+        Connector *connectorClass = [[Connector alloc]init];
+        //connectorClass.StringBeingPassed = @"lalala";
+        connectorClass.StringBeingPassed = MYGlobalVariable;
+        destinationVC.connectorClass = connectorClass;
+    }
 }
 
 - (void)removeAllLabelLayers {

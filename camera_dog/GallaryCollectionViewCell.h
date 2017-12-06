@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CameraExampleViewController.h"
+
 
 @interface GallaryCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *dogImages;

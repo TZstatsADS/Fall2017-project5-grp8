@@ -7,7 +7,6 @@
 //
 
 #import "PopupVCViewController.h"
-#import "CameraExampleViewController.h"
 
 @interface PopupVCViewController ()
 

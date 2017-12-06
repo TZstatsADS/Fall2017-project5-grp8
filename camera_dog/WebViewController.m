@@ -7,21 +7,23 @@
 //
 
 #import "WebViewController.h"
-#import "CameraExampleViewController.h"
+
 
 @interface WebViewController ()
 
 @end
 
 @implementation WebViewController
+@synthesize connectorClass;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.Web4Dog.delegate = self;
     
-    NSString *stringURL = @"https://en.wikipedia.org/wiki/";
-    stringURL = [stringURL stringByAppendingString:MYGlobalVariable];
+    NSString *newString = [connectorClass.StringBeingPassed stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+
+    NSString *stringURL_pre = @"https://en.wikipedia.org/wiki/";
+    NSString *stringURL = [stringURL_pre stringByAppendingString:newString];
     NSURL *URL = [NSURL URLWithString:stringURL];
     NSURLRequest *requestURL = [NSURLRequest requestWithURL:URL];
     [self.Web4Dog loadRequest:requestURL];
@@ -37,10 +39,11 @@
     [self.activityIndicator stopAnimating];
     self.activityIndicator.hidesWhenStopped = YES;
 }
-
-- (IBAction)closeWeb:(id * )sender {
-    [self dismissViewControllerAnimated:NO completion:nil];
+- (IBAction)Exit:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 
 /*
 - (void)didReceiveMemoryWarning {

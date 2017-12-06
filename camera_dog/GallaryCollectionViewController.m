@@ -12,7 +12,6 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreImage/CoreImage.h>
 #import <ImageIO/ImageIO.h>
-#import "CameraExampleViewController.h"
 
 
 @interface GallaryCollectionViewController ()

@@ -18,8 +18,8 @@
 #include <memory>
 #include "tensorflow/core/public/session.h"
 #include "tensorflow/core/util/memmapped_file_system.h"
+#import "Connector.h"
 
-extern NSString* MYGlobalVariable;
 
 @interface CameraExampleViewController
     : UIViewController<UIGestureRecognizerDelegate,
@@ -42,6 +42,7 @@ extern NSString* MYGlobalVariable;
   std::vector<std::string> labels;
 }
 @property(strong, nonatomic) CATextLayer *predictionTextLayer;
+@property(nonatomic, strong)Connector *connectorClass;
 
 - (IBAction)takePicture:(id)sender;
 - (IBAction)switchCameras:(id)sender;

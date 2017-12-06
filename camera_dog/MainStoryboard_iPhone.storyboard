@@ -22,14 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="12">
+                            <view contentMode="scaleAspectFill" id="12">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iD8-yH-eWH">
-                                <rect key="frame" x="-8" y="621" width="391" height="42"/>
+                                <rect key="frame" x="-8" y="621" width="196" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
@@ -39,18 +39,6 @@
                                 </state>
                                 <connections>
                                     <action selector="takePicture:" destination="2" eventType="touchUpInside" id="BTy-7E-XUS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dps-fV-79m">
-                                <rect key="frame" x="188" y="580" width="187" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96387503109999995" green="0.96232647859999998" blue="1" alpha="0.30240426939999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                <state key="normal" title="Web It!">
-                                    <color key="titleShadowColor" red="0.83600264329999996" green="0.66563276599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bwg-4C-Ztp" kind="push" id="3j9-EG-qS0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="knw-ri-Sfm">
@@ -65,6 +53,19 @@
                                     <segue destination="NtX-HM-MJb" kind="push" id="1xs-Ju-Ska"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dps-fV-79m">
+                                <rect key="frame" x="188" y="621" width="187" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <state key="normal" title="Wiki It!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToWebView:" destination="4" eventType="touchUpInside" id="CFa-T4-p9S"/>
+                                    <segue destination="bwg-4C-Ztp" kind="modal" identifier="passSegue" id="Feb-D9-ZLK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -76,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266" y="47"/>
+            <point key="canvasLocation" x="265.5" y="46.5"/>
         </scene>
         <!--More Information-->
         <scene sceneID="oDL-Qi-RiN">
@@ -87,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" misplaced="YES" id="0x6-Yz-QeD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="41" width="375" height="626"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -96,6 +97,15 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XFj-Tx-0Wa">
+                                <rect key="frame" x="-14" y="0.0" width="89" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Exit:" destination="bwg-4C-Ztp" eventType="touchUpInside" id="wqY-EA-g2U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.69369332901554404" green="0.69369332901554404" blue="0.69369332901554404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -107,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lk-q1-Hu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101.5" y="1168.5"/>
+            <point key="canvasLocation" x="110.5" y="900.5"/>
         </scene>
         <!--Photo Gallary-->
         <scene sceneID="Afe-BU-lmU">
@@ -143,10 +153,10 @@
                 <collectionViewController id="NtX-HM-MJb" customClass="GallaryCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zZH-a5-tIE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.64009057267095981" green="0.8108456258797837" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3hb-Jx-DuD">
-                            <size key="itemSize" width="200" height="200"/>
+                            <size key="itemSize" width="180" height="180"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -159,13 +169,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="zix-7R-FAG">
+                                        <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="zix-7R-FAG">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.83600264329999996" green="0.66563276599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.83600264329999996" green="0.66563276599999999" blue="1" alpha="0.4613501320422535" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="200" height="200"/>
                                 <connections>
                                     <outlet property="dogImages" destination="zix-7R-FAG" id="FEj-Lh-efd"/>
                                 </connections>

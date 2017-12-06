@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WebViewController.h"
-            timestampString = "534219920.838232"
+            timestampString = "534244978.044717"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "WebViewController"
-            landmarkType = "2">
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "activityIndicator"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[WebViewController activityIndicator]"
+                  moduleName = "tf_camera_example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laohuang/tensorflow/tensorflow/examples/ios/camera_dog/WebViewController.h"
+                  timestampString = "534244978.200629"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[WebViewController setActivityIndicator:]"
+                  moduleName = "tf_camera_example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/laohuang/tensorflow/tensorflow/examples/ios/camera_dog/WebViewController.h"
+                  timestampString = "534244978.210244"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GallaryCollectionViewController.m"
-            timestampString = "534219920.838723"
+            timestampString = "534223421.334769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "GallaryCollectionViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GallaryCollectionViewController.m"
-            timestampString = "534219920.84676"
+            timestampString = "534223421.33487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "GallaryCollectionViewController"
             landmarkType = "3">
          </BreakpointContent>

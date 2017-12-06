@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CameraExampleViewController.h"
 
 @interface GallaryCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
