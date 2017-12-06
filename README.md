@@ -11,11 +11,11 @@ Term: Fall 2017
 	+ Chaoyue Tan - ct2774
 	+ Yufei Zhao - yz3007
 + Project summary: We harvest data about dogs’ personality, trainability, etc. from  American Kennel Club and more than 120,000 dog images based on 120 dogs from imageNet. Then we use pretrained CNN model to make dog breed prediction by following step:
-1. Load the tensorflow graph and variables pre-trained on the imagenet dataset
-2. Use tensorboard to investigate the graph architecture
-3. Remove the last layer, fix the weights of the remaining layers
-4. Use what remains as a black-box function transforming images into derived feature vectors, and finally fit a new classifier on the derived feature vectors
-5. Evaluate the performance of the fine-tuned model and get 90.4% of accuracy in validation set
+	1. Load the tensorflow graph and variables pre-trained on the imagenet dataset
+	2. Use tensorboard to investigate the graph architecture
+	3. Remove the last layer, fix the weights of the remaining layers
+	4. Use what remains as a black-box function transforming images into derived feature vectors, and finally fit a new classifier on 	     the derived feature vectors
+	5. Evaluate the performance of the fine-tuned model and get 90.4% of accuracy in validation set
 In addition, we integrate CNN trained on tensorflow into IOS APP in order to identify the dog breed effectively and conventiently.
 
 
