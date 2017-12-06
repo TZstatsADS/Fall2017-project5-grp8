@@ -2,7 +2,7 @@
 
 Term: Fall 2017
 
-+ Team #
++ Team #8
 + Projec title: IOS Image Classification
 + Team members
 	+ Christina Huang - yh2859
@@ -10,7 +10,15 @@ Term: Fall 2017
 	+ Siyi Wang - sw3120
 	+ Chaoyue Tan - ct2774
 	+ Yufei Zhao - yz3007
-+ Project summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ Project summary: We harvest data about dogs’ personality, trainability, etc. from  American Kennel Club and more than 120,000 dog images based on 120 dogs from imageNet. Then we use pretrained CNN model to make dog breed prediction by following step:
+- Load the tensorflow graph and variables pre-trained on the imagenet dataset
+- Use tensorboard to investigate the graph architecture
+- Remove the last layer, fix the weights of the remaining layers
+- Use what remains as a black-box function transforming images into derived feature vectors, and finally fit a new classifier on the derived feature vectors
+- Evaluate the performance of the fine-tuned model and get 90.4% of accuracy in validation set
+In addition, we integrate CNN trained on tensorflow into IOS APP in order to identify the dog breed effectively and conventiently.
+
+
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
 
