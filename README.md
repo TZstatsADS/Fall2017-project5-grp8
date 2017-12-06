@@ -16,6 +16,7 @@ Term: Fall 2017
 	+  Remove the last layer, fix the weights of the remaining layers
 	+  Use what remains as a black-box function transforming images into derived feature vectors, and finally fit a new classifier on 	     the derived feature vectors
 	+  Evaluate the performance of the fine-tuned model and get 90.4% of accuracy in validation set
+
 In addition, we integrate CNN trained on tensorflow into IOS APP in order to identify the dog breed effectively and conventiently.
 
 
