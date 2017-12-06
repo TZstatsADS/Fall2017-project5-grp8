@@ -7,6 +7,7 @@
 //
 
 #import "WebViewController.h"
+#import "CameraExampleViewController.h"
 
 @interface WebViewController ()
 
@@ -18,12 +19,15 @@
     [super viewDidLoad];
     
     self.Web4Dog.delegate = self;
-    NSString *stringURL = @"https://en.wikipedia.org/wiki/Welsh_Corgi";
+    
+    NSString *stringURL = @"https://en.wikipedia.org/wiki/";
+    stringURL = [stringURL stringByAppendingString:MYGlobalVariable];
     NSURL *URL = [NSURL URLWithString:stringURL];
     NSURLRequest *requestURL = [NSURLRequest requestWithURL:URL];
     [self.Web4Dog loadRequest:requestURL];
     
 }
+
 
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     [self.activityIndicator startAnimating];
@@ -34,11 +38,15 @@
     self.activityIndicator.hidesWhenStopped = YES;
 }
 
+- (IBAction)closeWeb:(id * )sender {
+    [self dismissViewControllerAnimated:NO completion:nil];
+}
 
+/*
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+}*/
 
 /*
 #pragma mark - Navigation

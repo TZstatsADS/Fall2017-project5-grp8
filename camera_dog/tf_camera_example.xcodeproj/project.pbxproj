@@ -21,6 +21,13 @@
 		1CDB2D4E1ED3AA35007929E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CDB2D4D1ED3AA35007929E9 /* Info.plist */; };
 		450167F81FD730DB00E52BB5 /* PopupVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450167F71FD730DB00E52BB5 /* PopupVCViewController.m */; };
 		450168061FD7518200E52BB5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450168051FD7518200E52BB5 /* WebViewController.m */; };
+		450168091FD76ECF00E52BB5 /* GallaryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450168081FD76ECF00E52BB5 /* GallaryCollectionViewController.m */; };
+		4501680C1FD76EF700E52BB5 /* GallaryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501680B1FD76EF700E52BB5 /* GallaryCollectionViewCell.m */; };
+		450168121FD778B000E52BB5 /* dog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4501680D1FD778AF00E52BB5 /* dog2.jpg */; };
+		450168131FD778B000E52BB5 /* dog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4501680E1FD778AF00E52BB5 /* dog1.jpg */; };
+		450168141FD778B000E52BB5 /* dog3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4501680F1FD778AF00E52BB5 /* dog3.jpg */; };
+		450168151FD778B000E52BB5 /* dog4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 450168101FD778AF00E52BB5 /* dog4.jpg */; };
+		450168161FD778B000E52BB5 /* dog5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 450168111FD778AF00E52BB5 /* dog5.jpg */; };
 		54DC6C3C5F734F3A58069F0C /* libPods-tf_camera_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA8BF92C84895BFE59D8236 /* libPods-tf_camera_example.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +55,15 @@
 		450167F71FD730DB00E52BB5 /* PopupVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupVCViewController.m; sourceTree = "<group>"; };
 		450168041FD7518200E52BB5 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		450168051FD7518200E52BB5 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		450168071FD76ECF00E52BB5 /* GallaryCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GallaryCollectionViewController.h; sourceTree = "<group>"; };
+		450168081FD76ECF00E52BB5 /* GallaryCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GallaryCollectionViewController.m; sourceTree = "<group>"; };
+		4501680A1FD76EF700E52BB5 /* GallaryCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GallaryCollectionViewCell.h; sourceTree = "<group>"; };
+		4501680B1FD76EF700E52BB5 /* GallaryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GallaryCollectionViewCell.m; sourceTree = "<group>"; };
+		4501680D1FD778AF00E52BB5 /* dog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog2.jpg; sourceTree = "<group>"; };
+		4501680E1FD778AF00E52BB5 /* dog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog1.jpg; sourceTree = "<group>"; };
+		4501680F1FD778AF00E52BB5 /* dog3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog3.jpg; sourceTree = "<group>"; };
+		450168101FD778AF00E52BB5 /* dog4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog4.jpg; sourceTree = "<group>"; };
+		450168111FD778AF00E52BB5 /* dog5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog5.jpg; sourceTree = "<group>"; };
 		55ED318E8D29C8AFEF03DF1E /* Pods-tf_camera_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_camera_example.release.xcconfig"; path = "Pods/Target Support Files/Pods-tf_camera_example/Pods-tf_camera_example.release.xcconfig"; sourceTree = "<group>"; };
 		59A3CFF51CF4E68100C4259F /* descp_corgi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = descp_corgi.jpg; sourceTree = "<group>"; };
 		59A3CFF71CF4E68100C4259F /* dog_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dog_retrained_labels.txt; sourceTree = "<group>"; };
@@ -93,6 +109,10 @@
 		591157921CF4011C00C31E3A = {
 			isa = PBXGroup;
 			children = (
+				4501680A1FD76EF700E52BB5 /* GallaryCollectionViewCell.h */,
+				4501680B1FD76EF700E52BB5 /* GallaryCollectionViewCell.m */,
+				450168071FD76ECF00E52BB5 /* GallaryCollectionViewController.h */,
+				450168081FD76ECF00E52BB5 /* GallaryCollectionViewController.m */,
 				450168041FD7518200E52BB5 /* WebViewController.h */,
 				450168051FD7518200E52BB5 /* WebViewController.m */,
 				450167F61FD730DB00E52BB5 /* PopupVCViewController.h */,
@@ -126,6 +146,11 @@
 		59A3CFF31CF4E68100C4259F /* data */ = {
 			isa = PBXGroup;
 			children = (
+				4501680E1FD778AF00E52BB5 /* dog1.jpg */,
+				4501680D1FD778AF00E52BB5 /* dog2.jpg */,
+				4501680F1FD778AF00E52BB5 /* dog3.jpg */,
+				450168101FD778AF00E52BB5 /* dog4.jpg */,
+				450168111FD778AF00E52BB5 /* dog5.jpg */,
 				59A3CFF51CF4E68100C4259F /* descp_corgi.jpg */,
 				59A3CFF71CF4E68100C4259F /* dog_retrained_labels.txt */,
 				59A3CFF91CF4E68100C4259F /* quantized_stripped_dogs_retrained.pb */,
@@ -197,9 +222,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C968D171ED3B8F20054F5C3 /* descp_corgi.jpg in Resources */,
+				450168121FD778B000E52BB5 /* dog2.jpg in Resources */,
 				1C968D181ED3B8F20054F5C3 /* dog_retrained_labels.txt in Resources */,
 				1C968D191ED3B8F20054F5C3 /* quantized_stripped_dogs_retrained.pb in Resources */,
+				450168151FD778B000E52BB5 /* dog4.jpg in Resources */,
+				450168141FD778B000E52BB5 /* dog3.jpg in Resources */,
+				450168161FD778B000E52BB5 /* dog5.jpg in Resources */,
 				1C99111C1ED3B0E600A6BFB9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				450168131FD778B000E52BB5 /* dog1.jpg in Resources */,
 				1CDB2D4E1ED3AA35007929E9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDB2D4C1ED3A9CD007929E9 /* tensorflow_utils.mm in Sources */,
+				450168091FD76ECF00E52BB5 /* GallaryCollectionViewController.m in Sources */,
+				4501680C1FD76EF700E52BB5 /* GallaryCollectionViewCell.m in Sources */,
 				450168061FD7518200E52BB5 /* WebViewController.m in Sources */,
 				1C3C9DCB1ED3AB4200B8B5FA /* ios_image_load.mm in Sources */,
 				450167F81FD730DB00E52BB5 /* PopupVCViewController.m in Sources */,

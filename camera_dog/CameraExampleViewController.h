@@ -19,6 +19,8 @@
 #include "tensorflow/core/public/session.h"
 #include "tensorflow/core/util/memmapped_file_system.h"
 
+extern NSString* MYGlobalVariable;
+
 @interface CameraExampleViewController
     : UIViewController<UIGestureRecognizerDelegate,
                        AVCaptureVideoDataOutputSampleBufferDelegate> {

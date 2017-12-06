@@ -34,6 +34,8 @@ const bool model_uses_memory_mapping = false;
 // If you have your own model, point this to the labels file.
 static NSString* labels_file_name = @"dog_retrained_labels";
 static NSString* labels_file_type = @"txt";
+
+
 // These dimensions need to match those the model was trained with.
 const int wanted_input_width = 299;
 const int wanted_input_height = 299;
@@ -560,6 +562,9 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     }
 
     labelCount += 1;
+    if (labelCount <= 1 ){
+        NSString *MYGlobalVariable = label;
+    }
     if (labelCount > 4) {
       break;
     }

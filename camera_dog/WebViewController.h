@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CameraExampleViewController.h"
 
 @interface WebViewController : UIViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *Web4Dog;

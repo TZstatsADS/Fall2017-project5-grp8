@@ -1,5 +1,5 @@
 //
-//  PopupVCViewController.h
+//  GallaryCollectionViewCell.h
 //  tf_camera_example
 //
 //  Created by laohuang on 2017/12/5.
@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CameraExampleViewController.h"
 
-@interface PopupVCViewController : UIViewController
+@interface GallaryCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *dogImages;
+
 
 @end
