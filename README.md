@@ -35,7 +35,7 @@ Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by
 
 ```
 proj/
-├── camera_dogs/
+├── camera_dog/
 ├── lib/
 ├── data/
 ├── doc/
