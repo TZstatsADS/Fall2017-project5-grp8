@@ -24,7 +24,7 @@ Term: Fall 2017
 
 
 	
-**Contribution statement**: ([default](doc/a_note_on_contributions.md)) 
+**Contribution statement**:
 + Christina Huang(Presenter): iOS App establishment - UI design, "Snap It", "Wiki It" and "Gallgary" view controllor
 + Jing Zhao: vanilla CNN model establishment
 + Siyi Wang: data collection and clean, web scraper for descriptions
@@ -35,6 +35,7 @@ Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by
 
 ```
 proj/
+├── camera_dogs/
 ├── lib/
 ├── data/
 ├── doc/
