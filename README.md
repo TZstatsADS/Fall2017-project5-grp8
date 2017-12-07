@@ -4,7 +4,7 @@ Term: Fall 2017
 
 + Team #8
 + Projec title: Dog Breed Identifier APP
-![screenshot](figs/dog.app.jpg)
+![screenshot](figs/init_photo.jpg)
 + Team members
 	+ Christina Huang - yh2859
 	+ Jing Zhao - jz2786
@@ -15,14 +15,19 @@ Term: Fall 2017
 	+  Load the tensorflow graph and variables pre-trained on the imagenet dataset
 	+  Use tensorboard to investigate the graph architecture
 	+  Remove the last layer, fix the weights of the remaining layers
-	+  Use what remains as a black-box function transforming images into derived feature vectors, and finally fit a new classifier on 	     the derived feature vectors
+	+  Use what remains as a black-box function transforming images into derived feature vectors, and finally fit a new classifier on the derived feature vectors
 	+  Evaluate the performance of the fine-tuned model and get 90.4% of accuracy in validation set
 
-	In addition, we integrate CNN trained on tensorflow into IOS APP in order to identify the dog breed effectively and conventiently.
+	In addition, we integrate CNN trained on tensorflow into iOS App in order to identify the dog breed effectively and conventiently, the App is called *Dog Breed!*
 
 
 	
-**Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
+**Contribution statement**: ([default](doc/a_note_on_contributions.md)) 
++ Christina Huang(Presenter): iOS App establishment - UI design, "Snap It", "Wiki It" and "Gallgary" view controllor
++ Jing Zhao: vanilla CNN model establishment
++ Siyi Wang: data collection and clean, web scraper for descriptions
++ Chaoyue Tan: updating and finishing pre-trained model (interception v3)
++ Yufei Zhao: assistant for iOS App - "Wiki It" view controllor
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
