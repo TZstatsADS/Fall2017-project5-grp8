@@ -5,6 +5,7 @@ Term: Fall 2017
 + Team #8
 + Projec title: Dog Breed Identifier APP
 <img src="figs/init_photo.jpg" width="200">
+
 + Team members
 	+ Christina Huang - yh2859
 	+ Jing Zhao - jz2786
