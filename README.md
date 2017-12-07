@@ -4,6 +4,7 @@ Term: Fall 2017
 
 + Team #8
 + Projec title: Dog Breed Identifier APP
+
 <img src="figs/init_photo.jpg" width="200"><img src="figs/wiki_photo.jpg" width="200"><img src="figs/photo_gallery.jpg" width="200">
 
 + Team members
